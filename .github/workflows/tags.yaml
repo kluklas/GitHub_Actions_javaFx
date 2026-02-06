@@ -54,7 +54,7 @@ jobs:
         path: HelloWorldFx-1.0.exe
 # Para crear la release
     - name: Release
-      uses: actions/action-gh-release@v2
+      uses: softprops/action-gh-release@v2
       if: github.ref_type == 'tag' # Filtro
       with:
         files: "*.exe"
